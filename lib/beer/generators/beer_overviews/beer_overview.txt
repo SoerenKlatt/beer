@@ -1,0 +1,6 @@
+##### Name #####
+Name: <%= beer %> Pils
+
+
+##### Brewery #####
+Brewery: <%= Beer::Noice.brewery %>
