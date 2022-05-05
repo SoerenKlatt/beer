@@ -1,4 +1,9 @@
 require "beer/version"
+require 'rails'
+require 'action_pack'
+require 'active_support/core_ext/hash/slice'
+require 'active_support/core_ext/hash/except'
+require 'active_support/core_ext/hash/reverse_merge'
 
 module Beer
   class Error < StandardError; end
