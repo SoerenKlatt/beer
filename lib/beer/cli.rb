@@ -1,6 +1,6 @@
 require 'thor'
 require 'beer'
-require 'beer/generators/beer_overview'
+require 'generators/beer/beer_overview'
 
 module Beer
   class CLI < Thor

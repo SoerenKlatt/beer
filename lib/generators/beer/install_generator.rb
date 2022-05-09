@@ -1,10 +1,6 @@
-require 'thor/group'
-
-module Beer
+module SimpleForm
   module Generators
-    class BeerOverview < Thor::Group
-      include Thor::Actions
-
+    class InstallGenerator < Rails::Generators::Base
       argument :group, type: :string
       argument :beer, type: :string
 
@@ -17,7 +13,7 @@ module Beer
       end
 
       def self.source_root
-        File.dirname(__FILE__) + "/beer_overviews"
+        File.dirname(__FILE__) + "/templates"
       end
     end
   end
