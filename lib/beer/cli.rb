@@ -9,13 +9,13 @@ module Beer
       puts Beer::Noice.brewery
     end
 
-    desc 'beer_type', 'shows every Pils form the Noice beer'
+    desc 'beer_type --type (type)', 'shows every Pils form the Noice beer'
     method_option :type, aliases: '-t'
     def beer_type
       puts Beer::Noice.beer_type(options[:type])
     end
 
-    desc 'beer_overview', 'Generates a beer overview scaffold'
+    desc 'beer_overview (group) (beer)', 'Generates a beer overview scaffold'
     def beer_overview(group, beer)
       Beer::Generators::BeerOverview.start([group, beer])
     end
